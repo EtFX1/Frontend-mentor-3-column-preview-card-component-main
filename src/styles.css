@@ -9,6 +9,8 @@
     --colour-transparent-white: hsla(0, 0%, 100%, 0.75);
     --colour-orange: hsl(31, 77%, 52%);
     --colour-white: rgb(255, 255, 255);
+    --colour-dark-cyan: hsl(184, 100%, 22%);
+    --colour-very-dark-cyan: hsl(179, 100%, 13%);
 
     /* font families */
     --font-big-shoulders: "Big Shoulders Display", sans-serif;
@@ -40,13 +42,10 @@ body {
 
 /* targets all cards */
 .card {
-    border-radius: 0.375rem;
-    padding: 2.8125rem; /*todo: re-adjust*/
+    padding: 2.55rem;
 }
 
-.card--orange {
-    background-color: var(--colour-orange);
-}
+/* !General styles for all cards (block, element) */
 
 .card__illustration {
     width: 3.4375rem;
@@ -68,7 +67,7 @@ body {
     color: var(--colour-transparent-white);
     letter-spacing: 0.6px;
     line-height: 1.6;
-    font-size: clamp(0.75rem, 4vw, 1.0938rem);
+    font-size: clamp(0.75rem, 4vw, 1rem);
     font-weight: var(--font-weight-light);
     margin-bottom: clamp(1.25rem, 9.5%, 2.5rem);
 }
@@ -80,7 +79,6 @@ body {
 
 .card__button {
     font-weight: var(--font-weight-light);
-    color: var(--colour-orange);
     letter-spacing: 0.025rem;
     border: 0;
     border-radius: 3.125rem;
@@ -89,6 +87,33 @@ body {
 
 .card__button:hover {
     outline: 0.0625rem solid var(--colour-white);
-    background-color: var(--colour-orange);
+    background-color: inherit;
     color: var(--colour-white);
+}
+
+/* !Styles for individual cards (modifier)*/
+.card--orange {
+    border-radius: 0.375rem 0.375rem 0 0;
+    background-color: var(--colour-orange);
+}
+
+.card--dark-cyan {
+    background-color: var(--colour-dark-cyan);
+}
+
+.card--very-dark-cyan {
+    border-radius: 0 0 0.375rem 0.375rem;
+    background-color: var(--colour-very-dark-cyan);
+}
+
+.card__button--orange-text {
+    color: var(--colour-orange);
+}
+
+.card__button--dark-cyan-text {
+    color: var(--colour-dark-cyan);
+}
+
+.card__button--very-dark-cyan-text {
+    color: var(--colour-very-dark-cyan);
 }
