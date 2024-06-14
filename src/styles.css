@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colours */
+    --colour-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --colour-orange: hsl(31, 77%, 52%);
+    --colour-white: rgb(255, 255, 255);
+
+    /* font families */
+    --font-big-shoulders: "Big Shoulders Display", sans-serif;
+    --font-lexend-deca: "Lexend Deca", sans-serif;
+
+    /* font weights */
+    --font-weight-light: 350;
+    --font-weight-semi-bold: 615;
+}
+
+/* @!MOBILE (<=992PX) */
+
+body {
+    background-color: var(--colour-transparent-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 0.9375rem;
+}
+
+/* main element */
+#cards-container {
+    margin: clamp(4rem, 15%, 7.5rem) 0;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+/* targets all cards */
+.card {
+    border-radius: 0.375rem;
+    padding: 2.8125rem; /*todo: re-adjust*/
+}
+
+.card--orange {
+    background-color: var(--colour-orange);
+}
+
+.card__illustration {
+    width: 3.4375rem;
+}
+
+.card__heading {
+    font-family: var(--font-big-shoulders);
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--colour-white);
+    font-size: clamp(1.875rem, 11vw, 2.5rem);
+}
+
+.card__illustration,
+.card__heading {
+    margin-bottom: clamp(0.9375rem, 7%, 1.5625rem);
+}
+
+.card__paragraph {
+    color: var(--colour-transparent-white);
+    letter-spacing: 0.6px;
+    line-height: 1.6;
+    font-size: clamp(0.75rem, 4vw, 1.0938rem);
+    font-weight: var(--font-weight-light);
+    margin-bottom: clamp(1.25rem, 9.5%, 2.5rem);
+}
+
+.card__paragraph,
+.card__button {
+    font-family: var(--font-lexend-deca);
+}
+
+.card__button {
+    font-weight: var(--font-weight-light);
+    color: var(--colour-orange);
+    letter-spacing: 0.025rem;
+    border: 0;
+    border-radius: 3.125rem;
+    padding: 0.75rem 1.5625rem;
+}
+
+.card__button:hover {
+    outline: 0.0625rem solid var(--colour-white);
+    background-color: var(--colour-orange);
+    color: var(--colour-white);
+}

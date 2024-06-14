@@ -7,23 +7,31 @@
         <!-- @!GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Font 1 -->
         <link
             href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap"
             rel="stylesheet"
         />
+        <!-- Font 2 -->
         <link
             href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
             rel="stylesheet"
         />
         <!-- @!FAVICON -->
         <link rel="icon" href="/images/favicon-32x32.png" />
+        <!-- @!CSS Link -->
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <main>
+        <main id="cards-container">
             <!-- @!Section 1 - Sedans -->
-            <article>
+            <article class="card card--orange">
                 <!-- Sedan image -->
-                <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                    class="card__illustration"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 64 40"
+                >
                     <g fill="none" fill-rule="evenodd">
                         <circle
                             fill="#000"
@@ -39,22 +47,21 @@
                         />
                     </g>
                 </svg>
-
                 <!-- Car name -->
-                <h2>SEDANS</h2>
+                <h2 class="card__heading">SEDANS</h2>
 
                 <!-- Car info -->
-                <p>
+                <p class="card__paragraph">
                     Choose a sedan for its affordability and excellent fuel
                     economy. Ideal for cruising in the city or on your next road
                     trip.
                 </p>
 
                 <!-- Learn More button -->
-                <button>Learn More</button>
+                <button class="card__button">Learn More</button>
             </article>
 
-            <!-- @!Section 2 - SUVS -->
+            <!-- @!Section 2 - SUV'S -->
             <article>
                 <!-- SUV image -->
                 <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +116,7 @@
                 </svg>
 
                 <!-- Car name -->
-                <h2>SEDANS</h2>
+                <h2>LUXURY</h2>
 
                 <!-- Car info -->
                 <p>
