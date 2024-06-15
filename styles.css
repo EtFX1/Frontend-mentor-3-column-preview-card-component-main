@@ -90,7 +90,7 @@ body {
 }
 
 .card__button:hover {
-    outline: 0.0625rem solid var(--colour-white);
+    outline: 0.125rem solid var(--colour-white);
     background-color: inherit;
     color: var(--colour-white);
 }
