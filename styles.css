@@ -42,7 +42,7 @@ body {
 
 /* targets all cards */
 .card {
-    padding: clamp(2.5rem, 14%, 2.8125rem);
+    padding: clamp(1rem, 14%, 2.8125rem);
 }
 
 /* !General styles for all cards (block, element) */
@@ -150,6 +150,6 @@ body {
 
     /* div containing header and text cont */
     .card__heading-and-text-cont {
-        margin-bottom: 5.625rem;
+        margin-bottom: 4.5rem;
     }
 }
